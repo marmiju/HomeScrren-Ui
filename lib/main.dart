@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         scaffoldBackgroundColor: const Color(0xFF11161F),
-        disabledColor: Colors.white54
+        disabledColor: Colors.white54,
+        cardColor: Color(0xFFFF3440)
       ),
       home: HomeScreen()
     );

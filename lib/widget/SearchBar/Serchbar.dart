@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_screen/widget/SearchBar/SearchField.dart';
+import 'package:home_screen/widget/SearchBar/SearchFilter.dart';
 
 class Serchbar extends StatelessWidget {
   const Serchbar({super.key});
@@ -7,12 +8,17 @@ class Serchbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return 
-      Row(
-        children: [
-          Searchfield(),
-          
-        ],
-     
-    );
+      Container(
+        margin: EdgeInsets.only(top: 30),
+        height: 50,
+        child: Row(
+          children: [
+            Searchfield(),
+            Searchfilter()
+                 
+          ],
+             
+            ), 
+      );
   }
 }
