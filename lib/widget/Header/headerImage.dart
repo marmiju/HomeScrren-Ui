@@ -6,6 +6,8 @@ class HeaderImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 50,
+      height: 50,
       padding: EdgeInsets.all(2), // Space for the gradient border
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -19,8 +21,6 @@ class HeaderImage extends StatelessWidget {
         borderRadius: BorderRadius.circular(50),
         child: Image.asset(
           'assets/images/profile.png',
-          width: 50,
-          height: 50,
           fit: BoxFit.cover,
         ),
       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:home_screen/widget/Titlewithsub.dart';
-import 'package:home_screen/widget/headerImage.dart';
+import 'package:home_screen/widget/Header/TitlewithSub.dart';
+import 'package:home_screen/widget/Header/headerImage.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});

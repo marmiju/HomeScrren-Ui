@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:home_screen/widget/Header.dart';
+import 'package:home_screen/widget/Header/Header.dart';
+import 'package:home_screen/widget/SearchBar/Serchbar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -15,6 +16,7 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Header(),
+              Serchbar(),
             ],
           ),
         ),
