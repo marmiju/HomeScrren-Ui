@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:home_screen/widget/HeadingTitle.dart';
 
 class Category extends StatefulWidget {
   const Category({super.key});
@@ -19,28 +20,7 @@ class _CategoryState extends State<Category> {
       height: 100, 
       child: Column(
         children: [
-          Row(
-            children: [
-              Text(
-                'Category',
-                style: GoogleFonts.akatab(
-                  color: Colors.white,
-                  fontSize: 18,
-                ),
-              ),
-              Spacer(),
-              TextButton(
-                onPressed: () {},
-                child: Text(
-                  'See More',
-                  style: GoogleFonts.akatab(
-                    color: Colors.white,
-                    fontSize: 14,
-                  ),
-                ),
-              ),
-            ],
-          ),
+          Headingtitle(title: 'Category'),
           Expanded(
             child: ListView.builder(
               itemCount: categories.length,

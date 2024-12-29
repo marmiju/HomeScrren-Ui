@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:home_screen/widget/Category/Category.dart';
 import 'package:home_screen/widget/Header/Header.dart';
 import 'package:home_screen/widget/ImageCarsor.dart';
+import 'package:home_screen/widget/Movies/Movies.dart';
 import 'package:home_screen/widget/SearchBar/Serchbar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,15 +14,20 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Header(),
-              Serchbar(),
-              Category(),
-              Imagecarsor(),
-            ],
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Header(),
+                Serchbar(),
+                Category(),
+                Imagecarsor(),
+                Movies(),
+                
+              
+              ],
+            ),
           ),
         ),
       ),
