@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_screen/widget/Category/Category.dart';
+import 'package:home_screen/widget/ContinueWatching/ContinueWatching.dart';
 import 'package:home_screen/widget/Header/Header.dart';
 import 'package:home_screen/widget/ImageCarsor.dart';
 import 'package:home_screen/widget/Movies/Movies.dart';
@@ -24,6 +25,7 @@ class HomeScreen extends StatelessWidget {
                 Category(),
                 Imagecarsor(),
                 Movies(),
+                Continuewatching(),
                 
               
               ],

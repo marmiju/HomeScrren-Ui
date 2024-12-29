@@ -8,30 +8,30 @@ class Movies extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<Map<String, String>> movies = [
-      {"title": "Yes I Do", "image": "assets/images/1.png"},
-      {"title": "Soul Mate", "image": "assets/images/2.png"},
-      {"title": "UB's Secret", "image": "assets/images/3.png"},
-      {"title": "Yes I Do", "image": "assets/images/1.png"},
+      {"title": "XOXO the Kia", "image": "assets/images/m1.png"},
+      {"title": "play More", "image": "assets/images/m2.png"},
+      {"title": "Spirint Night", "image": "assets/images/m3.png"},
+      {"title": "Happy HoliDays", "image": "assets/images/m4.png"},
       {"title": "Soul Mate", "image": "assets/images/2.png"},
       {"title": "UB's Secret", "image": "assets/images/3.png"},
     ];
     return LayoutBuilder(
       builder: (context, constraints) {
-        double cardHeight = constraints.maxWidth * 0.4; 
+        double size = constraints.maxWidth ; 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Headingtitle(title:'Trending Movies'),
-            const SizedBox(height: 16),
+            
             SizedBox(
-               height: cardHeight + 40,
+               height: size * 0.7,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: movies.length,
                 itemBuilder: (_, index) {
                   return Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Cardwithtitle(data: movies[index], cardheight: cardHeight),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: Cardwithtitle(data: movies[index], cardwidth: size * 0.4, cardheight: size *0.6,),
                   );
                 },
               ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:home_screen/widget/HeadingTitle.dart';
 
 class Category extends StatefulWidget {
@@ -16,7 +15,7 @@ class _CategoryState extends State<Category> {
   Widget build(BuildContext context) {
     List<String> categories = ["All", "Action", "Anime", "Sci-fi","Thriller"];
 
-    return Container(
+    return  Container(
       height: 100, 
       child: Column(
         children: [
