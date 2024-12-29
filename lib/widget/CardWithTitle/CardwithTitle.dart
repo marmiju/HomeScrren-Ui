@@ -20,11 +20,18 @@ class Cardwithtitle extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
               child: Image.asset(data["image"] ?? '',height: cardheight, width: cardwidth, fit: BoxFit.cover,),
             ),
-            SizedBox(height: 8,),
-            Text(data["title"] ?? 'Movie name',style: GoogleFonts.roboto(
-              color: Colors.white,  
-              fontSize: cardwidth * 0.09
-            ))
+            SizedBox(height: 12),
+            SizedBox(
+              width:cardwidth,
+              child: Text(data["title"] ?? 'Movie name',style: GoogleFonts.roboto(
+                color: Colors.white,  
+                fontSize: cardwidth * 0.09
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              softWrap: true,
+              ),
+            )
           ],
         );
   }

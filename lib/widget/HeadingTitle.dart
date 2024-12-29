@@ -16,6 +16,7 @@ class Headingtitle extends StatelessWidget {
                 style: GoogleFonts.akatab(
                   color: Colors.white,
                   fontSize: 18,
+                  fontWeight: FontWeight.w800
                 ),
               ),
               Spacer(),
@@ -28,6 +29,7 @@ class Headingtitle extends StatelessWidget {
                   style: GoogleFonts.akatab(
                     color: Colors.white,
                     fontSize: 14,
+                    
                   ),
                 ),
               ),

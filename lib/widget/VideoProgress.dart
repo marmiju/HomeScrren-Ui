@@ -43,10 +43,18 @@ class Videoprogress extends StatelessWidget {
         SizedBox(
           height: 8,
         ),
-        Text(
-          data["title"] ?? 'Movie name',
-          style: GoogleFonts.roboto(
-              color: Colors.white, fontSize: cardwidth * 0.07),
+        SizedBox(
+          width: cardwidth,
+          child: Text(
+            data["title"] ?? 'Movie name',
+            style: GoogleFonts.roboto(
+                color: Colors.white, fontSize: cardwidth * 0.07),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                softWrap: true,
+                
+                
+          ),
         ),
       ],
     );
