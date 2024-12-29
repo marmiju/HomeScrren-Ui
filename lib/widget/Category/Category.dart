@@ -9,14 +9,14 @@ class Category extends StatefulWidget {
 }
 
 class _CategoryState extends State<Category> {
-  int selectedindex = 0; // Declare selectedindex here, so it persists across rebuilds
+  int selectedindex = 0; 
 
   @override
   Widget build(BuildContext context) {
     List<String> categories = ["All", "Action", "Anime", "Sci-fi","Thriller"];
 
     return Container(
-      height: 100, // Set a reasonable height for the container
+      height: 100, 
       child: Column(
         children: [
           Row(
