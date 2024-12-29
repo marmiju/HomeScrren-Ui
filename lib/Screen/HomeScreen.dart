@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_screen/widget/Category/Category.dart';
 import 'package:home_screen/widget/Header/Header.dart';
 import 'package:home_screen/widget/SearchBar/Serchbar.dart';
 
@@ -17,6 +18,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               Header(),
               Serchbar(),
+              Category(),
             ],
           ),
         ),
